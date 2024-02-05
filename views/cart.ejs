@@ -1,0 +1,11 @@
+<!-- <script>const Recipe = require('../models/Recipe');</script> -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><%- recipe.name %></li>
+    </ol>
+  </nav>
+ <h4>Items in the cart :</h4>
+  <% recipe.ingredients.forEach(function(ingredients, index){ %>
+    <li class="list-group-item"><%= ingredients %></li>
+  <% }) %> 
